@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💰 Expense Tracker</h1>
+
+    <div class="form-box">
+        <input type="text" id="category" placeholder="Category">
+        <input type="number" id="amount" placeholder="Amount">
+        <input type="text" id="note" placeholder="Note">
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <h2>All Expenses</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody id="expenseList"></tbody>
+    </table>
+
+    <h2 id="total">Total: ₹0</h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
